@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Bob",
+    "gender": "Male",
+    "birthday": "1992-10-18"
+  },
+  {
+    "name": "Selina",
+    "gender": "Female",
+    "birthday": "1995-10-18"
+  },
+  {
+    "name": "麦克",
+    "gender": "女",
+    "birthday": "1999-1-1"
+  }
+]
