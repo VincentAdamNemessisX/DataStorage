@@ -90,15 +90,21 @@ pipeline = [
 # print([(result['name'], result['age']) for result in results])
 
 # update data
-condition = {'name': 'Jordan'}
-stu = collection.find_one(condition)
-stu['age'] = 99
-result = collection.update_one(condition, {'$set': stu})
-print(result)
-print(result.matched_count, result.modified_count)
+# condition = {'name': 'Jordan'}
+# stu = collection.find_one(condition)
+# stu['age'] = 99
+# result = collection.update_one(condition, {'$set': stu})
+# print(result)
+# print(result.matched_count, result.modified_count)
+#
+# condition = {'age': {'$gt': 15}}
+# result = collection.update_many(condition, {'$inc': {'age': 5}})
+# print(result)
+# print(result.matched_count, result.modified_count)
 
-condition = {'age': {'$gt': 15}}
-result = collection.update_many(condition, {'$inc': {'age': 5}})
-print(result)
-print(result.matched_count, result.modified_count)
+# remove data
+# result = collection.delete_one({'name': 'Bagar'})
+# print(result, result.deleted_count)
+# result = collection.delete_many({'age': {'$lt': 25}})
+# print(result.deleted_count)
 
